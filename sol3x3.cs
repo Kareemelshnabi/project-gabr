@@ -68,6 +68,8 @@ namespace gabr
                 num12 = 1 / num1 * num12;
                 num12 = Math.Round(num12, 2);
                 label19.Text = num12.ToString();
+                
+                 label16.Text = "R1 * 1/"+num1+" --> R1";
 
                 num1 = 1 / num1 * num1;
                 num1 = Math.Round(num1, 2);
@@ -85,7 +87,7 @@ namespace gabr
                 label12.Text = num5.ToString();
                 label19.Text = num12.ToString();
                 
-
+label16.Text = "Done";
 
             }
             else if (num1 == 0 && num2 != 0)
@@ -109,7 +111,7 @@ namespace gabr
                 num6 = enum2;
                 num11 = enum3;
 
-
+label16.Text = "Interchanging R1,R2";
 
                 goto p;
             }
@@ -134,7 +136,7 @@ namespace gabr
                 num6 = Math.Round(num6, 2);
                 label13.Text = num6.ToString();
                 
-
+ label21.Text = "R2 - R1 --> R2";
 
 
 
@@ -154,7 +156,7 @@ namespace gabr
                 num6 = Math.Round(num6, 2);
                 label13.Text = num6.ToString();
 
-                
+                 label21.Text = "R2 + R1 --> R2";
             }
 
             else if (num2 == 0)
@@ -162,6 +164,8 @@ namespace gabr
                 label10.Text = num2.ToString();
                 label13.Text = num6.ToString();
                 label18.Text = num11.ToString();
+                
+                   label21.Text = "Done";
 
 
                 
@@ -178,6 +182,8 @@ namespace gabr
                 num11 = Math.Round(num11, 2);
                 num11 = num11 - num12;
                 num11 = Math.Round(num11, 2);
+                
+                   label21.Text = "R2 * 1/"+num2+" --> R2 & R2 - R1 --> R2";
 
                 num2 = 1 / num2 * num2;
                 num2 = Math.Round(num2, 2);
@@ -209,7 +215,7 @@ namespace gabr
                 label9.Text = num3.ToString();
                 label14.Text = num7.ToString();
                 label17.Text = num10.ToString();
-
+ label20.Text = "R3 - R1 --> R3";
 
                 
             }
@@ -228,7 +234,7 @@ namespace gabr
                 label14.Text = num7.ToString();
                 label17.Text = num10.ToString();
 
-
+ label20.Text = "R3 + R1 --> R3";
                 
             }
 
@@ -238,7 +244,7 @@ namespace gabr
                 label14.Text = num7.ToString();
                 label17.Text = num10.ToString();
 
-
+label20.Text = "Done";
                 
             }
             else if (num3 != 0 && num3 != 1)
@@ -254,7 +260,7 @@ namespace gabr
                 num10 = num10 - num12;
                 num10 = Math.Round(num10, 2);
 
-
+label20.Text = "R3 * 1/"+num3+" --> R3 & R3 - R1 --> R3";
 
 
 
@@ -293,7 +299,7 @@ namespace gabr
                 label28.Text = num2.ToString();
                 label33.Text = num6.ToString();
                 label36.Text = num11.ToString();
-
+ label22.Text = "Done";
 
                 
             }
@@ -302,7 +308,7 @@ namespace gabr
                 num11 = 1 / num6 * num11;
                 num11 = Math.Round(num11, 2);
               
-
+ label22.Text = "R2 * 1/"+num6+" --> R2";
                 num6 = 1 / num6 * num6;
                 num6 = Math.Round(num6, 2);
 
@@ -330,7 +336,7 @@ namespace gabr
                 num6 = numx10;
                 num11 = numx11;
 
-
+  label22.Text = "Interchanging R2,R3";
                 goto b;
             }
 
@@ -351,7 +357,7 @@ namespace gabr
                 label32.Text = num7.ToString();
                 label37.Text = num10.ToString();
 
-
+  label23.Text = "R3 - R2 --> R3";
 
                 
             }
@@ -368,7 +374,7 @@ namespace gabr
                 label32.Text = num7.ToString();
                 label37.Text = num10.ToString();
 
-
+  label23.Text = "R3 + R2 --> R3";
                 
             }
 
@@ -381,6 +387,7 @@ namespace gabr
                 label37.Text = num10.ToString();
 
 
+                label23.Text = "Done";
                 
 
             }
@@ -395,7 +402,7 @@ namespace gabr
 
 
 
-
+ label23.Text = "R3 * 1/"+num7+" --> R3 & R3 - R2 --> R3";
 
                 num7 = 1 / num7 * num7;
                 num7 = Math.Round(num7, 2);

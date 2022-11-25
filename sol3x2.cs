@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace gabr
+namespace gabr //happy
 {
     public partial class sol3x2 : Form
     {

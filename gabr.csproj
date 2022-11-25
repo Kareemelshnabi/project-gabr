@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\Kimoo\Desktop\codes\Form1.cs" Link="Form1.cs" />
+    <Compile Include="C:\Users\Kimoo\Desktop\codes\Form2.cs" Link="Form2.cs" />
+  </ItemGroup>
+
+</Project>

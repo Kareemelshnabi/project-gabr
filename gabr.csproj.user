@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="design3x2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="design3x3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="design3x4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="design4x4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="design5x4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="design_3x3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="C:\Users\Kimoo\Desktop\codes\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sol3x2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sol3x3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sol3x4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sol4.x4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="sol5x4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

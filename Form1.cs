@@ -1,5 +1,8 @@
 namespace gabr
 {
+     //yes or no
+    //kareem
+    //code
     public partial class Form1 : Form
     {
         public double num1;

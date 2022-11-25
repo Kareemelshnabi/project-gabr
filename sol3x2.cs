@@ -208,7 +208,7 @@ namespace gabr
                 label28.Text = num2.ToString();
                 label33.Text = num6.ToString();
                 label36.Text = num11.ToString();
-                
+                  label10.Text="Done";
 
                 
             }
@@ -216,7 +216,7 @@ namespace gabr
             {
                 num11 = 1 / num6 * num11;
                 num11 = Math.Round(num11, 2);
-                
+                  label10.Text=" label10.Text = " R2*1/" + num6 + "-->R2";
 
                 num6 = 1 / num6 * num6;
                 num6 = Math.Round(num6, 2);
@@ -235,6 +235,7 @@ namespace gabr
                 label89.Text=z.ToString();
                 label90.Text="";
                 label155.Text = "Infinity soulution";
+                 label10.Text="";
 
 
             }else if (num6 == 0 && num11 == 0 && num5 != 0)
@@ -242,11 +243,13 @@ namespace gabr
                 label89.Text = "";
                label90.Text = "";
                 label155.Text = "Infinity soulution";
+                 label10.Text="";
             }else if (num6 == 0 && num11 != 0)
             {
                 label155.Text = "No SOULUTION";
                 label89.Text = "";
                 label90.Text = "";
+                 label10.Text="";
             }else if (num6 != 0 )
             {
               
@@ -265,6 +268,7 @@ namespace gabr
                 double z = (a - (x * q)) / b;
                 z = Math.Round(z, 1);
                 label89.Text = z.ToString();
+                 label10.Text="";
 
             }
 

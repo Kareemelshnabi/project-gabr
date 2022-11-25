@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +12,6 @@ namespace gabr
 {
     public partial class sol3x2 : Form
     {
-    happy
         public double num1;
         public double num2;
         

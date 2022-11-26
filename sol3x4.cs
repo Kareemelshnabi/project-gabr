@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,6 +68,8 @@ namespace gabr
         p:
             if (num1 != 0 && num1 != 1)
             {
+                label5.Text = "R1/" + num1;
+                label6.Text = "-" + num2 + "R1+R2-->R2, -"+num3+"R1+R3-->R3";
 
                 num5 = 1 / num1 * num5;
                 num5 = Math.Round(num5, 2);
@@ -92,7 +94,8 @@ namespace gabr
             }
             else if (num1 == 1)
             {
-
+                label5.Text = "Done";
+                label6.Text = "-" + num2 + "R1+R2-->R2, -" + num3 + "R1+R3-->R3";
                 label11.Text = num1.ToString();
                 label12.Text = num5.ToString();
                 label19.Text = num12.ToString();
@@ -102,6 +105,8 @@ namespace gabr
             }
             else if (num1 == 0 && num2 != 0)
             {
+                label5.Text = "Interchanging R1,R2  R1/"+num2;
+                label6.Text =  "done, -" + num3 + "R1+R3-->R3";
                 double enum1 = num1;
                 double enum2 = num5;
                 double enum3 = num12;
@@ -130,6 +135,8 @@ namespace gabr
 
             if (num2 == 1)
             {
+                label5.Text = "R1/" + num1;
+                label6.Text = "-" + num2 + "R1+R2-->R2, -" + num3 + "R1+R3-->R3";
                 num2 = num2 - num1;
                 num2 = Math.Round(num2, 2);
                 label10.Text = num2.ToString();
@@ -153,6 +160,8 @@ namespace gabr
 
             else if (num2 == -1)
             {
+                label5.Text = "R1/" + num1;
+                label6.Text = "-" + num2 + "R1+R2-->R2, -" + num3 + "R1+R3-->R3";
                 num2 = num2 + num1;
                 num2 = Math.Round(num2, 2);
                 label10.Text = num2.ToString();
@@ -184,7 +193,8 @@ namespace gabr
             }
             else if (num2 != 0 && num2 != 1)
             {
-
+                label5.Text = "R1/" + num1;
+                label6.Text = "-" + num2 + "R1+R2-->R2, -" + num3 + "R1+R3-->R3";
                 num6 = 1 / num2 * num6;
                 num6 = Math.Round(num6, 2);
                 num6 = num6 - num5;
@@ -219,6 +229,8 @@ namespace gabr
 
             if (num3 == 1)
             {
+                label5.Text = "R1/" + num1;
+                label6.Text = "-" + num2 + "R1+R2-->R2, -" + num3 + "R1+R3-->R3";
                 num7 = num7 - num5;
                 num7 = Math.Round(num7, 2);
 
@@ -240,6 +252,8 @@ namespace gabr
             }
             else if (num3 == -1)
             {
+                label5.Text = "R1/" + num1;
+                label6.Text = "-" + num2 + "R1+R2-->R2, -" + num3 + "R1+R3-->R3";
                 num7 = num7 + num5;
                 num7 = Math.Round(num7, 2);
                 num10 = num10 + num12;
@@ -259,6 +273,8 @@ namespace gabr
 
             else if (num3 == 0)
             {
+                label5.Text = "R1/" + num1;
+                label6.Text = "-" + num2 + "R1+R2-->R2 ,R3 Done" ;
                 label9.Text = num3.ToString();
                 label14.Text = num7.ToString();
                 label17.Text = num10.ToString();
@@ -268,7 +284,8 @@ namespace gabr
             }
             else if (num3 != 0 && num3 != 1)
             {
-
+                label5.Text = "R1/" + num1;
+                label6.Text = "-" + num2 + "R1+R2-->R2, -" + num3 + "R1+R3-->R3";
                 num7 = 1 / num3 * num7;
                 num7 = Math.Round(num7, 2);
                 num7 = num7 - num5;
@@ -313,6 +330,8 @@ namespace gabr
 
             if (num6 == 1)
             {
+                label4.Text = "Done";
+                label8.Text = "-" + num7 + "R2+R3-->R3";
                 label28.Text = num2.ToString();
                 label33.Text = num6.ToString();
                 label36.Text = num11.ToString();
@@ -322,6 +341,8 @@ namespace gabr
             }
             else if (num6 != 0 && num6 != 1)
             {
+                label4.Text = "R2/" + num6; ;
+                label8.Text = "-" + num7 + "R2+R3-->R3";
                 num11 = 1 / num6 * num11;
                 num11 = Math.Round(num11, 2);
                 num14 = 1 / num6 * num14;
@@ -338,6 +359,8 @@ namespace gabr
             }
             else if (num6 == 0 && num7 != 0)
             {
+                label4.Text = "Interchanging R2,R3,   R2/"+num7;
+                label8.Text = "Done";
                 double numx6 = num6;
                 double numx7 = num11;
                 double numx8 = num14;
@@ -362,6 +385,8 @@ namespace gabr
 
             if (num7 == 1)
             {
+                label4.Text = "R2 /" + num6;
+                label8.Text = "-" + num7 + "R2+R3-->R3";
                 num10 = num10 - num11;
                 num10 = Math.Round(num10, 2);
                 num15 = num15 - num14;
@@ -380,6 +405,8 @@ namespace gabr
             }
             else if (num7 == -1)
             {
+                label4.Text = "R2 /" + num6;
+                label8.Text = "-" + num7 + "R2+R3-->R3";
                 num10 = num10 + num11;
                 num10 = Math.Round(num10, 2);
                 num15 = num15 + num14;
@@ -398,6 +425,8 @@ namespace gabr
 
             else if (num7 == 0)
             {
+                label4.Text = "R2 /" + num6;
+                label8.Text = "Done";
 
                 label29.Text = num3.ToString();
                 label32.Text = num7.ToString();
@@ -410,7 +439,8 @@ namespace gabr
             else if (num7 != 0 && num7 != 1)
             {
 
-
+                label4.Text = "R2 /" + num6;
+                label8.Text = "-" + num7 + "R2+R3-->R3";
                 num10 = 1 / num7 * num10;
                 num10 = Math.Round(num10, 2);
                 num10 = num10 - num11;
@@ -454,12 +484,15 @@ namespace gabr
 
             if (num10 == 1)
             {
+                label15.Text = "Done";
                 label82.Text = num15.ToString();
                 label79.Text = num10.ToString();
 
             }
             else if (num10 != 1 && num10 != 0)
             {
+                label15.Text = "R3/" + num10;
+               
                 num15 = 1 / num10 * num15;
                 num15 = Math.Round(num15, 2);
                 label82.Text = num15.ToString();
@@ -473,12 +506,14 @@ namespace gabr
 
             }else if(num10 == 0 && num15 == 0&&num11!=0)
             {
+                label15.Text = "";
                 label89.Text = "";
                 label90.Text = "";
                 label91.Text = "";
                 label155.Text = "Infinity soulution..";
             }else if (num10 == 0 && num15 != 0)
             {
+                label15.Text = "";
                 label89.Text = "";
                 label90.Text = "";
                 label91.Text = "";
@@ -486,6 +521,8 @@ namespace gabr
             }
            if (num10 == 1)
             {
+               
+                label15.Text = "Done";
                 double x=double.Parse(num15.ToString());
                 double y=double.Parse(num10.ToString());
                 double z = x / y ;
@@ -510,6 +547,7 @@ namespace gabr
 
             }else if (num10 == 0 && num15 == 0 && num11 == 0&&num12==0)
             {
+                label15.Text = "";
                 double x = double.Parse(num14.ToString());
                 double y = double.Parse(num6.ToString());
                 double z = x / y;
@@ -528,7 +566,7 @@ namespace gabr
             }
            else if (num10 == 0 && num15 == 0 && num11 == 0 && num12 != 0)
             {
-
+                label15.Text = "";
                 double x = double.Parse(num14.ToString());
                 double y = double.Parse(num6.ToString());
                 double z = x / y;
@@ -541,6 +579,7 @@ namespace gabr
             }
             else if (num10 == 0 && num15 == 0 && num11 != 0 && num12 == 0&&num5==0)
             {
+                label15.Text = "";
                 double x = double.Parse(num13.ToString());
                 double y = double.Parse(num1.ToString());
                 double z = x / y;
@@ -555,5 +594,6 @@ namespace gabr
 
 
         }
+
     }
 }

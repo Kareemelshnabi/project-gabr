@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -75,6 +75,8 @@ namespace gabr
             p:
             if (num1 != 0 && num1 != 1)
             {
+                label4.Text = "R1/" + num1+ ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-"+num3+"R1+R3-->R3, -"+num4+"R1+R4-->R4";
 
                 num5 = 1 / num1 * num5;
                 num5 = Math.Round(num5, 2);
@@ -99,6 +101,8 @@ namespace gabr
             }
             else if (num1 == 1)
             {
+                label4.Text = "Done, -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
 
                 label11.Text = num1.ToString();
                 label12.Text = num5.ToString();
@@ -108,6 +112,8 @@ namespace gabr
                
             }else if (num1 == 0 && num2 != 0)
             {
+                label4.Text = "Interchanging R1,R2 then R1/" +num2+ ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 double enum1 = num1;
                 double enum2 = num5;
                 double enum3 = num12;
@@ -136,6 +142,8 @@ namespace gabr
 
             if (num2 == 1 )
             {
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 num2 = num2 - num1;
                 num2 = Math.Round(num2, 2);
                 label10.Text = num2.ToString();
@@ -159,6 +167,8 @@ namespace gabr
 
             else if (num2 == -1)
             {
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 num2 = num2 + num1;
                 num2 = Math.Round(num2, 2);
                 label10.Text = num2.ToString();
@@ -181,6 +191,8 @@ namespace gabr
 
             else if (num2 == 0)
             {
+                label4.Text = "R1/" + num1 +"Done";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 label10.Text = num2.ToString();
                 label13.Text = num6.ToString();
                 label18.Text = num11.ToString();
@@ -190,7 +202,8 @@ namespace gabr
             }
             else if (num2 != 0 && num2 != 1)
             {
-
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 num6 = 1 / num2 * num6;
                 num6 = Math.Round(num6, 2);
                 num6 = num6 - num5;
@@ -225,6 +238,8 @@ namespace gabr
 
             if (num3 == 1)
             {
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 num7 = num7 - num5;
                 num7 = Math.Round(num7, 2);
 
@@ -246,6 +261,8 @@ namespace gabr
             }
             else if (num3 == -1)
             {
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 num7 = num7 + num5;
                 num7 = Math.Round(num7, 2);
                 num10 = num10 + num12;
@@ -265,6 +282,8 @@ namespace gabr
 
             else if (num3 == 0)
             {
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "Done, " + num4 + "R1+R4-->R4";
                 label9.Text = num3.ToString();
                 label14.Text = num7.ToString();
                 label17.Text = num10.ToString();
@@ -274,6 +293,8 @@ namespace gabr
             }
             else if (num3 != 0 && num3 != 1)
             {
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
 
                 num7 = 1 / num3 * num7;
                 num7 = Math.Round(num7, 2);
@@ -306,6 +327,8 @@ namespace gabr
 
             if (num4 == 1)
             {
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 num8 = num8 - num5;
                 num8 = Math.Round(num8, 2);
                 num9 = num9 - num12;
@@ -325,6 +348,8 @@ namespace gabr
 
             else if (num4 == -1)
             {
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 num8 = num8 + num5;
                 num8 = Math.Round(num8, 2);
                 num9 = num9 + num12;
@@ -345,7 +370,8 @@ namespace gabr
 
             else if (num4 == 0)
             {
-
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + "Done";
                 label8.Text = num4.ToString();
                 label15.Text = num8.ToString();
                 label16.Text = num9.ToString();
@@ -356,7 +382,8 @@ namespace gabr
             }
             else if (num4 != 0 && num4 != 1)
             {
-
+                label4.Text = "R1/" + num1 + ", -" + num2 + "R1+R2-->R2";
+                label5.Text = "-" + num3 + "R1+R3-->R3, -" + num4 + "R1+R4-->R4";
                 num8 = 1 / num4 * num8;
                 num8 = Math.Round(num8, 2);
                 num8 = num8 - num5;
@@ -399,6 +426,8 @@ namespace gabr
 
             if (num6 == 1)
             {
+                label6.Text = "Done" + ", -" + num3 + "R2+R3-->R3";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 label28.Text = num2.ToString();
                 label33.Text = num6.ToString();
                 label36.Text = num11.ToString();
@@ -408,6 +437,8 @@ namespace gabr
             }
             else if (num6 != 0 && num6 != 1)
             {
+                label6.Text = "R2/"+num2+"then " + num3 + "R2+R3-->R3";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 num11 = 1 / num6 * num11;
                 num11 = Math.Round(num11, 2);
                 num14 = 1 / num6 * num14;
@@ -424,6 +455,8 @@ namespace gabr
             }
             else if (num6 == 0 && num7 != 0)
             {
+                label6.Text = " interchanging R2,R3 then R2/" + num3 + ", Done";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 double numx6 = num6;
                 double numx7 = num11;
                 double numx8 = num14;
@@ -448,6 +481,8 @@ namespace gabr
 
             if (num7 == 1)
             {
+                label6.Text = "R2/" + num2 + "then " + num3 + "R2+R3-->R3";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 num10 = num10 - num11;
                 num10 = Math.Round(num10, 2);
                 num15 = num15 - num14;
@@ -466,6 +501,8 @@ namespace gabr
             }
             else if (num7 == -1)
             {
+                label6.Text = "R2/" + num2 + "then " + num3 + "R2+R3-->R3";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 num10 = num10 + num11;
                 num10 = Math.Round(num10, 2);
                 num15 = num15 + num14;
@@ -484,7 +521,8 @@ namespace gabr
 
             else if (num7 == 0)
             {
-
+                label6.Text = "R2/" + num2 + ", Done";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 label29.Text = num3.ToString();
                 label32.Text = num7.ToString();
                 label37.Text = num10.ToString();
@@ -496,7 +534,8 @@ namespace gabr
             else if (num7 != 0 && num7 != 1)
             {
 
-
+                label6.Text = "R2/" + num2 + "then " + num3 + "R2+R3-->R3";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 num10 = 1 / num7 * num10;
                 num10 = Math.Round(num10, 2);
                 num10 = num10 - num11;
@@ -523,6 +562,8 @@ namespace gabr
 
             if (num8 == 1)
             {
+                label6.Text = "R2/" + num2 + "then " + num3 + "R2+R3-->R3";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 num9 = num9 - num11;
                 num9 = Math.Round(num9, 2);
                 num16 = num16 - num14;
@@ -539,6 +580,8 @@ namespace gabr
             }
             else if (num8 == -1)
             {
+                label6.Text = "R2/" + num2 + "then " + num3 + "R2+R3-->R3";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 num9 = num9 + num11;
                 num9 = Math.Round(num9, 2);
                 num16 = num16 + num14;
@@ -557,6 +600,8 @@ namespace gabr
 
             else if (num8 == 0)
             {
+                label6.Text = "R2/" + num2 + "then " + num3 + "R2+R3-->R3";
+                label24.Text = "Done";
                 label30.Text = num4.ToString();
                 label31.Text = num8.ToString();
                 label38.Text = num9.ToString();
@@ -567,7 +612,8 @@ namespace gabr
             else if (num8 != 0 && num8 != 1)
             {
 
-
+                label6.Text = "R2/" + num2 + "then " + num3 + "R2+R3-->R3";
+                label24.Text = "-" + num4 + "R2+R4-->R4";
                 num9 = 1 / num8 * num9;
                 num9 = Math.Round(num9, 2);
                 num9 = num9 - num11;
@@ -612,12 +658,16 @@ namespace gabr
 
             if (num10 == 1)
             {
+                label25.Text = "Done";
+                label26.Text = "-" + num9 + "R3+R4-->R4";
                 label82.Text = num15.ToString();
                 label79.Text = num10.ToString();
 
             }
             else if (num10 != 1 && num10 != 0)
             {
+                label25.Text = "R3/"+num10;
+                label26.Text = "-" + num9 + "R3+R4-->R4";
                 num15 = 1 / num10 * num15;
                 num15 = Math.Round(num15, 2);
                 label82.Text = num15.ToString();
@@ -632,12 +682,16 @@ namespace gabr
             }
             if (num9 == 0)
             {
+                label25.Text = "R3/" + num10;
+                label26.Text ="Done";
                 label81.Text = num16.ToString();
 
                 label80.Text = num9.ToString();
             }
             else if (num9 == 1)
             {
+                label25.Text = "R3/" + num10;
+                label26.Text = "-" + num9 + "R3+R4-->R4";
                 num16 = num16 - num15;
                 num16 = Math.Round(num16, 2);
                 label81.Text = num16.ToString();
@@ -649,6 +703,8 @@ namespace gabr
             }
             else if (num9 == -1)
             {
+                label25.Text = "R3/" + num10;
+                label26.Text = "-" + num9 + "R3+R4-->R4";
                 num16 = num16 + num15;
                 num16 = Math.Round(num16, 2);
                 label81.Text = num16.ToString();
@@ -659,6 +715,8 @@ namespace gabr
             }
             else if (num9 != 0 && num9 != 1)
             {
+                label25.Text = "R3/" + num10;
+                label26.Text = "-" + num9 + "R3+R4-->R4";
                 num16 = 1 / num9 * num16;
                 num16 = Math.Round(num16, 2);
                 num16 = num16 - num15;
@@ -677,7 +735,7 @@ namespace gabr
             if (num16 != 0)
             {
 
-               
+                label27.Text = "R4/" + num16;
 
                 label61.Text = num16.ToString();
                 label49.Text = num1.ToString();
@@ -710,6 +768,7 @@ namespace gabr
 
             }else if (num16==0&&num10!=0)
             {
+                label27.Text = "";
                 double x = double.Parse(label62.Text);
                 double y = double.Parse(label59.Text);
                 double z = x / y;
@@ -735,7 +794,7 @@ namespace gabr
             else if (num16==0&&num10==0&&num15!=0)
 
             {
-
+                label27.Text = "";
                 label61.Text = num16.ToString();
                 label49.Text = num1.ToString();
                 label56.Text = num5.ToString();
@@ -766,6 +825,7 @@ namespace gabr
             else if (num16 == 0 && num10 == 0 && num15 == 0)
 
             {
+                label27.Text = "";
 
                 label61.Text = num16.ToString();
                 label49.Text = num1.ToString();
@@ -796,6 +856,7 @@ namespace gabr
             }
             else if (num16 == 0 && num10 == 0 && num15 == 0&&num11==0&&num12==0)
             {
+                label27.Text = "";
 
                 double x = double.Parse(label63.Text);
                 double y = double.Parse(label55.Text);
@@ -815,6 +876,7 @@ namespace gabr
             }
             else if (num16 == 0 && num10 == 0 && num15 == 0 && num11 == 0 && num12 != 0)
             {
+                label27.Text = "";
                 double x = double.Parse(label63.Text);
                 double y = double.Parse(label55.Text);
                 double z = x / y;

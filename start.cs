@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace gabr
 {
@@ -27,7 +28,7 @@ namespace gabr
             if (textBox1.Text == "" || textBox2.Text == "")
             {
 
-                MessageBox.Show("pleasse, enter values..", "message", MessageBoxButtons.OK);
+                MessageBox.Show("pleasse, Enter values..", "message", MessageBoxButtons.OK);
                 return;
             }
 
@@ -36,8 +37,18 @@ namespace gabr
             double equation = double.Parse(textBox2.Text);
             if (variable > equation)
             {
-                MessageBox.Show("Invalid , Please Enter the full equations"
-                    , "message", MessageBoxButtons.OK);
+                DialogResult dialogResult = MessageBox.Show("Homegenous System! Are the constants =0?"
+                    , "message", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    MessageBox.Show("Infinite number of soultions"!,"message", MessageBoxButtons.OK);
+                    return;
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    MessageBox.Show("Please , Enter the full equations then"!, "message", MessageBoxButtons.OK);
+                }
+
                 return;
             }
             else if (equation > (variable + 1))
@@ -57,7 +68,7 @@ namespace gabr
             else if (variable == 4 && equation == 5)
             {
                 Form22 frm2 = new Form22();
-                frm2.ShowDialog();     //5*5
+                //frm2.ShowDialog();     //5*5
 
             }
             else if (variable == 3 && equation == 3)
@@ -91,9 +102,9 @@ namespace gabr
           //  }
           
           
-            else
+            else 
             {
-                MessageBox.Show("error   Max 4 variables..");
+                MessageBox.Show(" Max 4 variables.. and Min 2 variables! ");
 
                 return;
             }
